@@ -4,7 +4,7 @@ const cors = require("cors");
 const path = require("path");
 
 //middleware
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors());
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "../build")));
@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(5000, () => {
+app.listen(8080, () => {
   console.log("Server is running on port 5000");
 });
