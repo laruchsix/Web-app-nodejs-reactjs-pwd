@@ -18,6 +18,6 @@ app.get("/", (req, res) => {
 });
 
 let port = 8080;
-app.listen(posrt, () => {
+app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
