@@ -32,7 +32,7 @@
     "workbox-streams": "^6.5.3"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "npm run build && node server/server.js",
     "build": "react-scripts build",
     "web": "react-scripts start",
     "server": "nodemon server/index.js",
